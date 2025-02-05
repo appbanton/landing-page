@@ -119,7 +119,7 @@ export default function Navbar() {
                       className="flex items-center"
                       href="https://forms.gle/z5g59bT6x1NaZnNv5"
                     >
-                      Let's chat
+                      Let&apos;s chat
                     </Button>
                   </div>
                 </motion.div>
