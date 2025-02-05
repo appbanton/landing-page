@@ -1,9 +1,4 @@
 import Button from "../components/Button";
-// import Image from "next/image";
-// import designExample1Image from "../assets/images/design-example-1.png";
-// import designExample2Image from "../assets/images/design-example-2.png";
-// import Tag from "../components/Tag";
-
 import Pointer from "../components/Pointer";
 
 export default function Hero() {
@@ -12,12 +7,6 @@ export default function Hero() {
       <div className="container relative">
         {/* absolutes */}
         <div className="hidden lg:block">
-          {/* <div className="absolute top-16 -left-52">
-            <Image src={designExample1Image} alt="cursor 1 image" />
-          </div>
-          <div className="absolute -top-16 -right-80">
-            <Image src={designExample2Image} alt="cursor 2 image" />
-          </div> */}
           <div className="absolute top-96 left-48">
             <Pointer name="Appbanton" />
           </div>
