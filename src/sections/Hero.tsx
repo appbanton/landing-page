@@ -1,9 +1,10 @@
 import Button from "../components/Button";
-import Image from "next/image";
-import designExample1Image from "../assets/images/design-example-1.png";
-import designExample2Image from "../assets/images/design-example-2.png";
+// import Image from "next/image";
+// import designExample1Image from "../assets/images/design-example-1.png";
+// import designExample2Image from "../assets/images/design-example-2.png";
+// import Tag from "../components/Tag";
+
 import Pointer from "../components/Pointer";
-import Tag from "../components/Tag";
 
 export default function Hero() {
   return (
