@@ -96,7 +96,7 @@ export default function Process() {
           {features.map((e) => (
             <div
               key={e}
-              className="bg-neutral-900 border border-white/10 px-3 md:px-5 py-1.5 md:py-2 rounded-2xl gap-3 inline-flex justify-center items-center" //inline flex prevents container width from spanning available width
+              className="bg-neutral-900 border border-white/10 px-3 md:px-5 py-1.5 md:py-2 rounded-2xl gap-3 inline-flex justify-center items-center hover:scale-105 transition duration-300" //inline flex prevents container width from spanning available width
             >
               <span className="bg-brand-primary text-neutral-950 size-5 rounded-full inline-flex items-center justify-center text-xl">
                 &#10038;
