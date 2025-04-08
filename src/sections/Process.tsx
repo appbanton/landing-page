@@ -27,7 +27,7 @@ export default function Process() {
           <Tag variant="default">our process</Tag>
         </div>
         <h2 className="text-5xl md:text-6xl font-medium text-center md:max-w-2xl mx-auto">
-          Where power meets
+          Where design meets
           <span className="text-brand-primary"> simplicity</span>
         </h2>
 
