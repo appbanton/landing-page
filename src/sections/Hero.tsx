@@ -2,23 +2,6 @@ import HeroDashboardMockup from "@/components/HeroDashboardMockup";
 
 const CTA_HREF = "https://forms.gle/z5g59bT6x1NaZnNv5";
 
-function ArrowIcon() {
-  return (
-    <svg
-      width="13"
-      height="13"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth={2.5}
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-    </svg>
-  );
-}
-
 export default function Hero() {
   return (
     <section className="relative min-h-svh flex items-center overflow-hidden pt-[88px] pb-12 bg-canvas">
@@ -69,13 +52,13 @@ export default function Hero() {
                 letterSpacing: "-0.035em",
               }}
             >
-              We build software <em className="text-brand">worth using</em>
+              We design and build software products
             </h1>
 
             {/* Description */}
-            <p className="font-sans text-[16px] leading-[1.65] text-ink-muted max-w-[440px] mb-6">
-              Full-service software studio. UX research, product design, and
-              development — from your first idea to a product your users love.
+            <p className="font-sans text-[16px] leading-[1.65] text-ink-muted max-w-[440px] mb-8">
+              One team takes your idea from research and design through to a
+              shipped, working product
             </p>
 
             {/* CTAs */}
@@ -86,10 +69,10 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 bg-brand text-white font-display font-bold text-[14px] px-7 py-[13px] rounded-[6px] no-underline transition-[opacity,transform] duration-200 hover:opacity-85 active:scale-[0.98]"
               >
-                Book a 10 min call <ArrowIcon />
+                Book a call
               </a>
-              <span className="font-sans text-[14px] font-medium text-ink-muted">
-                It&apos;s absolutely free
+              <span className="font-sans text-[14px] text-ink-muted mt-1.5">
+                No commitment. Just a conversation.
               </span>
             </div>
           </div>
