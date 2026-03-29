@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
-import CaseDashboardMockup from "@/components/CaseDashboardMockup";
+import LitereadMockup from "@/components/LitereadMockup";
+import SkylarMockup from "@/components/SkylarkMockup";
 import CasePhoneMockup from "@/components/CasePhoneMockup";
 
 function CaseNum({ children }: { children: string }) {
@@ -59,9 +60,11 @@ function Chips({ items }: { items: string[] }) {
 function Case({
   children,
   wide = false,
+  href,
 }: {
   children: React.ReactNode;
   wide?: boolean;
+  href?: string;
 }) {
   const [hovered, setHovered] = useState(false);
 
@@ -78,6 +81,17 @@ function Case({
           "max-md:col-span-1 md:col-span-2 grid max-md:grid-cols-1 md:grid-cols-2 gap-[52px] items-center",
       )}
     >
+      {/* Full-card link overlay — only rendered when href is provided */}
+      {href && (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          referrerPolicy="origin"
+          className="absolute inset-0 z-10"
+          aria-label="View project"
+        />
+      )}
       {children}
     </div>
   );
@@ -104,31 +118,58 @@ export default function Work() {
           </p>
         </div>
 
-        {/* Cases grid — 2px gap shows border colour as divider lines */}
+        {/* Cases grid */}
         <div className="grid grid-cols-2 gap-[2px] bg-edge border border-edge max-md:grid-cols-1">
-          <Case wide>
+          {/* ── Case 01 — Literead ── */}
+          <Case wide href="https://literead.vercel.app">
             <div>
-              <CaseNum>01 / 04</CaseNum>
-              <CaseCat>Fintech · Dashboard · Web App</CaseCat>
+              <CaseNum>01 / 02</CaseNum>
+              <CaseCat>EdTech · Web App · AI-powered</CaseCat>
               <CaseTitle>
-                Banking dashboard handling $2M daily — rebuilt from scratch
+                AI reading coach that adapts to every student
               </CaseTitle>
               <CaseBody>
-                The legacy system had a 68% task-failure rate. We rebuilt the
-                information architecture, ran 14 rounds of user testing, and
-                shipped an interface that cut errors by 41% within 30 days.
+                Literead needed a product that felt like a tutor, not a test. We
+                designed the full reading experience: passage flow, AI coaching
+                interface, and voice interaction. Shipped it to production.
               </CaseBody>
               <Chips
                 items={[
-                  "41% fewer errors",
-                  "68% → 12% task-failure",
-                  "14 user test rounds",
+                  "Live at literead.vercel.app",
+                  "AI coach UX",
+                  "Voice interaction",
                 ]}
               />
             </div>
-            <CaseDashboardMockup />
+            <LitereadMockup />
           </Case>
 
+          {/* ── Case 02 — Skylark Villa ── */}
+          <Case wide href="https://theskylarkvilla.com">
+            <div>
+              <CaseNum>02 / 02</CaseNum>
+              <CaseCat>Hospitality · Web · Trinidad</CaseCat>
+              <CaseTitle>
+                Luxury villa website that converts the right guest
+              </CaseTitle>
+              <CaseBody>
+                Skylark Villa sits on Trinidad&apos;s untouched northern coast.
+                We built a site that matches the property — cinematic,
+                unhurried, and focused entirely on converting the right guest.
+              </CaseBody>
+              <Chips
+                items={[
+                  "Live at theskylarkvilla.com",
+                  "Hospitality web",
+                  "Next.js",
+                ]}
+              />
+            </div>
+            <SkylarMockup />
+          </Case>
+
+          {/*
+          ── Case 02 — Marketplace (commented out) ──
           <Case>
             <CaseNum>02 / 04</CaseNum>
             <CaseCat>Marketplace · Mobile · iOS + Android</CaseCat>
@@ -144,6 +185,7 @@ export default function Work() {
             />
           </Case>
 
+          ── Case 03 — Healthcare (commented out) ──
           <Case>
             <CaseNum>03 / 04</CaseNum>
             <CaseCat>Healthcare · Web App · 3 hospitals</CaseCat>
@@ -156,10 +198,12 @@ export default function Work() {
               items={["29% fewer no-shows", "NPS +38pts", "3 hospitals"]}
             />
           </Case>
+          
 
+          ── Case 03 — Travel app (commented out) ──
           <Case wide>
             <div>
-              <CaseNum>04 / 04</CaseNum>
+              <CaseNum>03 / 03</CaseNum>
               <CaseCat>Travel · iOS + Android · 6 Islands</CaseCat>
               <CaseTitle>
                 Tourism discovery app for the Southern Caribbean — designed
@@ -173,7 +217,7 @@ export default function Work() {
               <Chips items={["6 islands", "iOS + Android", "8-week handoff"]} />
             </div>
             <CasePhoneMockup />
-          </Case>
+          </Case>*/}
         </div>
       </div>
     </section>
