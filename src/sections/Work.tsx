@@ -3,8 +3,7 @@
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import LitereadMockup from "@/components/LitereadMockup";
-import SkylarMockup from "@/components/SkylarkMockup";
-import CasePhoneMockup from "@/components/CasePhoneMockup";
+import CobaderosWalletMockup from "@/components/CobaderosWalletMockup";
 
 function CaseNum({ children }: { children: string }) {
   return (
@@ -36,19 +35,24 @@ function CaseTitle({ children }: { children: string }) {
 
 function CaseBody({ children }: { children: string }) {
   return (
-    <p className="font-sans text-[16px] leading-[1.7] text-ink-muted mb-7">
+    <p className="font-sans text-[16px] leading-[1.7] text-ink-muted mb-5">
       {children}
     </p>
   );
 }
 
-function Chips({ items }: { items: string[] }) {
+function Chips({ items, soon }: { items: string[]; soon?: boolean }) {
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className="flex flex-wrap gap-2 mb-6">
       {items.map((item) => (
         <span
           key={item}
-          className="font-mono text-[11px] tracking-[0.05em] uppercase px-[13px] py-[5px] border border-edge text-ink-muted"
+          className={twMerge(
+            "font-mono text-[11px] tracking-[0.05em] uppercase px-[13px] py-[5px] border",
+            soon
+              ? "border-[rgba(230,75,54,0.25)] text-[rgba(230,75,54,0.6)]"
+              : "border-edge text-ink-muted",
+          )}
         >
           {item}
         </span>
@@ -57,13 +61,28 @@ function Chips({ items }: { items: string[] }) {
   );
 }
 
+function CaseLink({ href, label }: { href: string; label: string }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="relative z-20 inline-flex items-center gap-2 font-display font-bold text-[13px] text-brand border border-[rgba(230,75,54,0.3)] bg-brand-dim px-4 py-2 rounded-[4px] no-underline transition-[background,border-color] duration-200 hover:bg-[rgba(230,75,54,0.16)] hover:border-[rgba(230,75,54,0.6)]"
+    >
+      {label}
+    </a>
+  );
+}
+
 function Case({
   children,
   wide = false,
+  full = false,
   href,
 }: {
   children: React.ReactNode;
   wide?: boolean;
+  full?: boolean;
   href?: string;
 }) {
   const [hovered, setHovered] = useState(false);
@@ -79,15 +98,14 @@ function Case({
           : "bg-canvas-s1 border-l-transparent",
         wide &&
           "max-md:col-span-1 md:col-span-2 grid max-md:grid-cols-1 md:grid-cols-2 gap-[52px] items-center",
+        full && "max-md:col-span-1 md:col-span-2",
       )}
     >
-      {/* Full-card link overlay — only rendered when href is provided */}
       {href && (
         <a
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          referrerPolicy="origin"
           className="absolute inset-0 z-10"
           aria-label="View project"
         />
@@ -120,104 +138,86 @@ export default function Work() {
 
         {/* Cases grid */}
         <div className="grid grid-cols-2 gap-[2px] bg-edge border border-edge max-md:grid-cols-1">
-          {/* ── Case 01 — Literead ── */}
-          <Case wide href="https://literead.vercel.app">
+          {/* 01 — Literead */}
+          <Case wide href="https://literead.co">
             <div>
-              <CaseNum>01 / 02</CaseNum>
-              <CaseCat>EdTech · Web App · AI-powered</CaseCat>
+              <CaseNum>01 / 04</CaseNum>
+              <CaseCat>EdTech · AI · Web App</CaseCat>
               <CaseTitle>
-                AI reading coach that adapts to every student
+                An AI reading coach that adapts to every student
               </CaseTitle>
               <CaseBody>
-                Literead needed a product that felt like a tutor, not a test. We
-                designed the full reading experience: passage flow, AI coaching
-                interface, and voice interaction. Shipped it to production.
+                Most reading apps test with multiple choice. Literead has a real
+                voice conversation with your child after every passage. The AI
+                listens, follows up, and coaches — like a tutor would.
               </CaseBody>
-              <Chips
-                items={[
-                  "Live at literead.vercel.app",
-                  "AI coach UX",
-                  "Voice interaction",
-                ]}
+              <Chips items={["AI coach", "Voice interaction", "No pressure"]} />
+              <CaseLink
+                href="https://literead.co"
+                label="Visit literead.co ↗"
               />
             </div>
-            <LitereadMockup />
-          </Case>
-
-          {/* ── Case 02 — Skylark Villa ── */}
-          <Case wide href="https://theskylarkvilla.com">
-            <div>
-              <CaseNum>02 / 02</CaseNum>
-              <CaseCat>Hospitality · Web · Trinidad</CaseCat>
-              <CaseTitle>
-                Luxury villa website that converts the right guest
-              </CaseTitle>
-              <CaseBody>
-                Skylark Villa sits on Trinidad&apos;s untouched northern coast.
-                We built a site that matches the property — cinematic,
-                unhurried, and focused entirely on converting the right guest.
-              </CaseBody>
-              <Chips
-                items={[
-                  "Live at theskylarkvilla.com",
-                  "Hospitality web",
-                  "Next.js",
-                ]}
-              />
+            <div className="hidden lg:block">
+              <LitereadMockup />
             </div>
-            <SkylarMockup />
           </Case>
 
-          {/*
-          ── Case 02 — Marketplace (commented out) ──
-          <Case>
+          {/* 02 — ShadowGovTT */}
+          <Case href="https://shadowgovtt.com">
             <CaseNum>02 / 04</CaseNum>
-            <CaseCat>Marketplace · Mobile · iOS + Android</CaseCat>
+            <CaseCat>CivicTech · UX · Government</CaseCat>
+            <CaseTitle>T&amp;T&apos;s public services reimagined</CaseTitle>
+            <CaseBody>
+              Government services can be tricky to use. They don&apos;t have to
+              be. We explore what they could look like when designed for the
+              people who use them — taking existing forms, portals, and websites
+              and producing usable alternatives.
+            </CaseBody>
+            <Chips items={["Citizen-first UX", "Gov forms redesigned"]} />
+            <CaseLink
+              href="https://shadowgovtt.com"
+              label="Visit shadowgovtt.com ↗"
+            />
+          </Case>
+
+          {/* 03 — Skylark Villa */}
+          <Case href="https://theskylarkvilla.com">
+            <CaseNum>03 / 04</CaseNum>
+            <CaseCat>Hospitality · Web · Conversion</CaseCat>
             <CaseTitle>
-              Caribbean marketplace from 0 to 3,400 active sellers
+              Luxury villa website that converts the right guest
             </CaseTitle>
             <CaseBody>
-              End-to-end product design for onboarding, seller dashboard, and
-              buyer discovery. Shipped in 6 weeks. 4.8★ on App Store at launch.
+              Skylark Villa sits on Trinidad&apos;s untouched northern coast. We
+              built a site that matches the property — cinematic, unhurried, and
+              focused entirely on converting the right guest.
             </CaseBody>
-            <Chips
-              items={["3,400 sellers", "4.8★ App Store", "6-week delivery"]}
+            <Chips items={["Hospitality", "Conversion-led"]} />
+            <CaseLink
+              href="https://theskylarkvilla.com"
+              label="Visit theskylarkvilla.com ↗"
             />
           </Case>
 
-          ── Case 03 — Healthcare (commented out) ──
-          <Case>
-            <CaseNum>03 / 04</CaseNum>
-            <CaseCat>Healthcare · Web App · 3 hospitals</CaseCat>
-            <CaseTitle>Patient portal that reduced no-shows by 29%</CaseTitle>
-            <CaseBody>
-              Redesigned booking, reminders, and teleconsult flows for a
-              regional healthcare group. NPS went up 38 points post-launch.
-            </CaseBody>
-            <Chips
-              items={["29% fewer no-shows", "NPS +38pts", "3 hospitals"]}
-            />
-          </Case>
-          
-
-          ── Case 03 — Travel app (commented out) ──
-          <Case wide>
-            <div>
-              <CaseNum>03 / 03</CaseNum>
-              <CaseCat>Travel · iOS + Android · 6 Islands</CaseCat>
-              <CaseTitle>
-                Tourism discovery app for the Southern Caribbean — designed
-                &amp; handed off in 8 weeks
-              </CaseTitle>
-              <CaseBody>
-                UX strategy, interaction design, component library, and full
-                developer handoff for a native app serving tour operators across
-                Barbados, Trinidad, Jamaica, Antigua, St. Lucia, and Grenada.
-              </CaseBody>
-              <Chips items={["6 islands", "iOS + Android", "8-week handoff"]} />
+          {/* 04 — Cobaderos (teaser) */}
+          <Case full>
+            <div className="md:grid md:grid-cols-2 md:gap-[52px] md:items-center">
+              <div>
+                <CaseNum>04 / 04</CaseNum>
+                <CaseCat>Identity · Trust · eID</CaseCat>
+                <CaseTitle>An identity wallet</CaseTitle>
+                <CaseBody>
+                  Proving you&apos;re human shouldn&apos;t be this hard. We make
+                  it simple — for businesses that need to verify, and people who
+                  need to trust.
+                </CaseBody>
+                <Chips items={["Coming soon"]} soon />
+              </div>
+              <div className="hidden lg:block">
+                <CobaderosWalletMockup />
+              </div>
             </div>
-            <CasePhoneMockup />
-          </Case>*/}
+          </Case>
         </div>
       </div>
     </section>
