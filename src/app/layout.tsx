@@ -42,6 +42,29 @@ export const metadata: Metadata = {
   icons: {
     icon: "/logo.svg",
   },
+  openGraph: {
+    title: "App Banton Studios — Software Studio",
+    description:
+      "Full-service software studio. UX research, product design, and development — from your first idea to a product your users love.",
+    url: "https://appbanton.com",
+    siteName: "App Banton Studios",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "App Banton Studios",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "App Banton Studios — Software Studio",
+    description:
+      "Full-service software studio. UX research, product design, and development — from your first idea to a product your users love.",
+    images: ["/og.png"],
+  },
 };
 
 /* ─────────────────────────────────────────
