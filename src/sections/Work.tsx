@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import LitereadMockup from "@/components/LitereadMockup";
-import CobaderosWalletMockup from "@/components/CobaderosWalletMockup";
+import CobaderosDashMockup from "@/components/CobaderosDashMockup";
 
 function CaseNum({ children }: { children: string }) {
   return (
@@ -138,7 +138,7 @@ export default function Work() {
 
         {/* Cases grid */}
         <div className="grid grid-cols-2 gap-[2px] bg-edge border border-edge max-md:grid-cols-1">
-          {/* 01 — Literead */}
+          {/* 01 Literead */}
           <Case wide href="https://literead.co">
             <div>
               <CaseNum>01 / 04</CaseNum>
@@ -149,7 +149,7 @@ export default function Work() {
               <CaseBody>
                 Most reading apps test with multiple choice. Literead has a real
                 voice conversation with your child after every passage. The AI
-                listens, follows up, and coaches — like a tutor would.
+                listens, follows up, and coaches. Like a tutor would.
               </CaseBody>
               <Chips items={["AI coach", "Voice interaction", "No pressure"]} />
               <CaseLink
@@ -162,7 +162,7 @@ export default function Work() {
             </div>
           </Case>
 
-          {/* 02 — ShadowGovTT */}
+          {/* 02 ShadowGovTT */}
           <Case href="https://shadowgovtt.com">
             <CaseNum>02 / 04</CaseNum>
             <CaseCat>CivicTech · UX · Government</CaseCat>
@@ -170,7 +170,7 @@ export default function Work() {
             <CaseBody>
               Government services can be tricky to use. They don&apos;t have to
               be. We explore what they could look like when designed for the
-              people who use them — taking existing forms, portals, and websites
+              people who use them taking existing forms, portals, and websites
               and producing usable alternatives.
             </CaseBody>
             <Chips items={["Citizen-first UX", "Gov forms redesigned"]} />
@@ -180,7 +180,7 @@ export default function Work() {
             />
           </Case>
 
-          {/* 03 — Skylark Villa */}
+          {/* 03 Skylark Villa */}
           <Case href="https://theskylarkvilla.com">
             <CaseNum>03 / 04</CaseNum>
             <CaseCat>Hospitality · Web · Conversion</CaseCat>
@@ -189,7 +189,7 @@ export default function Work() {
             </CaseTitle>
             <CaseBody>
               Skylark Villa sits on Trinidad&apos;s untouched northern coast. We
-              built a site that matches the property — cinematic, unhurried, and
+              built a site that matches the property, cinematic, unhurried, and
               focused entirely on converting the right guest.
             </CaseBody>
             <Chips items={["Hospitality", "Conversion-led"]} />
@@ -199,22 +199,28 @@ export default function Work() {
             />
           </Case>
 
-          {/* 04 — Cobaderos (teaser) */}
+          {/* 04 Cobaderos */}
           <Case full>
             <div className="md:grid md:grid-cols-2 md:gap-[52px] md:items-center">
               <div>
                 <CaseNum>04 / 04</CaseNum>
-                <CaseCat>Identity · Trust · eID</CaseCat>
-                <CaseTitle>An identity wallet</CaseTitle>
+                <CaseCat>eID · EUDI · Monetisation</CaseCat>
+                <CaseTitle>
+                  A monetisation layer for digital credentials
+                </CaseTitle>
                 <CaseBody>
-                  Proving you&apos;re human shouldn&apos;t be this hard. We make
-                  it simple — for businesses that need to verify, and people who
-                  need to trust.
+                  Proving you&apos;re human shouldn&apos;t require a
+                  bureaucratic nightmare. Cobaderos is an identity wallet that
+                  lets people prove who they are instantly and gives businesses
+                  the verification infrastructure they can actually trust.
                 </CaseBody>
-                <Chips items={["Coming soon"]} soon />
+                <CaseLink
+                  href="https://cobaderos.com"
+                  label="Visit cobaderos.com ↗"
+                />
               </div>
               <div className="hidden lg:block">
-                <CobaderosWalletMockup />
+                <CobaderosDashMockup />
               </div>
             </div>
           </Case>

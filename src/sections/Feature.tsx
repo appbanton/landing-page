@@ -235,7 +235,7 @@ export default function Feature() {
           {/* Content LHS */}
           <div style={{ padding: "80px 0", zIndex: 2, position: "relative" }}>
             <div className="slabel" style={{ marginBottom: "28px" }}>
-              Let&apos;s talk
+              Latest work
             </div>
             <h2
               style={{
@@ -248,9 +248,9 @@ export default function Feature() {
                 marginBottom: "24px",
               }}
             >
-              The world
+              An identity
               <br />
-              <em style={{ color: "var(--brand)" }}>awaits</em>
+              <em style={{ color: "var(--brand)" }}>wallet</em>
             </h2>
             <p
               style={{
@@ -262,9 +262,9 @@ export default function Feature() {
                 marginBottom: "40px",
               }}
             >
-              10 minutes. Tell us what you&apos;re building. We&apos;ll be
-              honest about whether we&apos;re the right fit — and if not,
-              we&apos;ll point you somewhere better.
+              Proving you&apos;re human shouldn&apos;t be this hard. We&apos;re
+              building Cobaderos — an identity wallet that makes verification
+              simple for businesses and people alike.
             </p>
             <MotionButton />
           </div>
