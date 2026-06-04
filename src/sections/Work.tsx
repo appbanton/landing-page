@@ -147,9 +147,9 @@ export default function Work() {
                 An AI reading coach that adapts to every student
               </CaseTitle>
               <CaseBody>
-                Most reading apps test with multiple choice. Literead has a real
-                voice conversation with your child after every passage. The AI
-                listens, follows up, and coaches. Like a tutor would.
+                Most reading apps test with multiple choice. Literead gives
+                readers a patient AI voice coach that asks the right questions
+                after every passage, building real comprehension.
               </CaseBody>
               <Chips items={["AI coach", "Voice interaction", "No pressure"]} />
               <CaseLink
@@ -209,10 +209,9 @@ export default function Work() {
                   A monetisation layer for digital credentials
                 </CaseTitle>
                 <CaseBody>
-                  Proving you&apos;re human shouldn&apos;t require a
-                  bureaucratic nightmare. Cobaderos is an identity wallet that
-                  lets people prove who they are instantly and gives businesses
-                  the verification infrastructure they can actually trust.
+                  Cobaderos provides an auditable, issuer-facing signal of
+                  credential verification activity that can support commercial
+                  billing, without violating the ARF's privacy prohibitions
                 </CaseBody>
                 <CaseLink
                   href="https://cobaderos.com"
