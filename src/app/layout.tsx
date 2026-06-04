@@ -21,8 +21,6 @@ const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
   display: "swap",
-  // Variable font — no explicit weight array needed.
-  // Next.js will load the full variable font range.
 });
 
 const dmMono = DM_Mono({
@@ -64,6 +62,10 @@ export const metadata: Metadata = {
     description:
       "Full-service software studio. UX research, product design, and development — from your first idea to a product your users love.",
     images: ["/og.png"],
+  },
+  // ── Google Search Console verification ──
+  verification: {
+    google: "2dfAe6PpA-5N_7CYDGs5IKHQyHCkUEKtBSLuI_YmyYA",
   },
 };
 
