@@ -1,43 +1,34 @@
 # App Banton Studios
 
-> Full-service software studio specialising in SaaS and web application development, UX research, and product design. One team takes your idea from research through to a shipped, working product.
+> A design and build studio in Port of Spain, Trinidad. Three disciplines under one roof: marketing (film, photography and social posts), software (websites, web apps and mobile apps) and construction (residential design, build and renovation).
 
-App Banton Studios is a software product studio based in Port of Spain, Trinidad, serving English-speaking clients worldwide. We design and build web applications, SaaS platforms, mobile apps, and design systems for founders, startups, and businesses with real problems to solve.
+The same studio made the house, the film and the website for Skylark Villa, a private villa on Trinidad's northern coast.
 
-We do not hand off to a third party. Design and engineering are owned by the same team — there is no gap between what gets designed and what gets built.
+## Marketing (https://appbanton.com/marketing)
 
-## Services
+Film, photography and social posts.
 
-- **Web Application Development**: Custom SaaS platforms, dashboards, internal tools, and customer portals. Designed and built to production quality.
-- **SaaS Product Development**: End-to-end product development from research and design through to a deployed, scalable product.
-- **Mobile App Development**: iOS and Android applications. Native feel, cross-platform efficiency. From concept through to App Store listing.
-- **UX Research & Product Design**: User interviews, journey mapping, wireframes, prototypes, and usability testing. We validate before we build so nothing ships broken.
-- **Design Systems**: Component libraries, tokens, and documentation. The foundation that keeps your product consistent as it scales.
-- **Retainer / Ongoing Product Partner**: Ongoing development and design partnership for teams that need a reliable studio on call.
+- **The Longest Hour**: a film made for Skylark Villa. Watch: https://youtu.be/BmJ1-GopThM
+- **The Road Never Stops**: a film in production. Release date to be announced.
 
-## Process
+## Software (https://appbanton.com/software)
 
-1. Discovery — stakeholder interviews, competitor audit, user journey mapping
-2. Design — wireframes, high-fidelity mockups, interactive prototypes validated with real users
-3. Build — clean, accessible, production-grade code with a component system your team can extend
-4. Launch + Support — we ship, monitor early behaviour, and stay on to fix what reality exposes
+Websites, web apps and mobile apps. Live projects:
 
-## Selected Work
+- **ShadowGovTT** (https://shadowgovtt.com): Trinidad and Tobago government services redesigned for the people who use them. Existing forms, portals and websites rebuilt as usable alternatives.
+- **Skylark Villa** (https://theskylarkvilla.com): website for a luxury villa on Trinidad's northern coast, built to convert the right guest.
+- **Literead** (https://literead.co): an AI reading coach for children. A patient voice coach that asks the right questions after every passage.
+- **Cobaderos** (https://cobaderos.com): a monetisation layer for revocable digital credentials under EUDI. An auditable, issuer-facing signal of verification activity that can support commercial billing without breaching the Architecture Reference Framework's privacy prohibitions.
 
-- **Literead** (https://literead.co): AI reading coach for children. Voice-based comprehension conversations that adapt to each student — like a tutor, not a test.
-- **ShadowGovTT** (https://shadowgovtt.com): Trinidad & Tobago government services redesigned for the people who use them. Citizen-first UX for existing forms, portals, and websites.
-- **Skylark Villa** (https://theskylarkvilla.com): Luxury villa website on Trinidad's northern coast. Cinematic, conversion-led, built to attract the right guest.
-- **Cobaderos**: (https://cobaderos.com): Monetization layer for revocable credentials under EUDI v2. Provides an auditable, issuer-facing signal of credential verification activity that supports commercial billing — without violating the Architecture Reference Framework's privacy prohibitions.
+## Construction (https://appbanton.com/construction)
 
-## Ideal Client
+Residential design, build and renovation, in Trinidad. Each project has a photo gallery.
 
-Founders and product leads at startups and growing businesses who know what they want to build, have the budget to do it properly, and need a single team that can own both design and engineering end-to-end.
-
-## Pricing Philosophy
-
-We are not the cheapest option. We guarantee real outcomes — not just deliverables handed over a wall. Engagements range from fixed-scope design projects to full-build retainers.
+- **Blanchisseuse** (https://appbanton.com/construction/skylark-villa): new build, 16 months. The private villa on the north coast that is also Skylark Villa. Footings and retaining walls on a sloping site, a framed structure over two levels, four flights of stairs, a carport and driveway.
+- **Cascade** (https://appbanton.com/construction/cascade): renovation, 5 months. French drain, stairs up a 15 ft slope, security door, masonry and plumbing, and a bridge to a renovated bedroom.
+- **San Juan** (https://appbanton.com/construction/san-juan): renovation, 7 weeks. Bathroom, kitchen and living room renovated, including new ceilings, tile, a glass shower enclosure and a solid wood sliding door.
 
 ## Contact
 
-- Book a free discovery call: https://forms.gle/z5g59bT6x1NaZnNv5
+- Start a project: https://forms.gle/z5g59bT6x1NaZnNv5
 - Website: https://appbanton.com

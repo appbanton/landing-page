@@ -1,5 +1,5 @@
 {
-  "name": "appbanton2",
+  "name": "appbanton",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,13 +10,9 @@
   },
   "dependencies": {
     "@next/third-parties": "^16.2.1",
-    "class-variance-authority": "^0.7.1",
-    "cobe": "^2.0.1",
-    "framer-motion": "^12.38.0",
     "next": "16.2.1",
     "react": "19.2.4",
-    "react-dom": "19.2.4",
-    "tailwind-merge": "^3.5.0"
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.2",

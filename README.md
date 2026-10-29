@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# App Banton Studios
 
-## Getting Started
+Website for App Banton Studios, a design and build studio in Port of Spain, Trinidad.
+Live at https://appbanton.com.
 
-First, run the development server:
+Pages: `/` (home), `/marketing`, `/software`, `/construction` and one gallery page per construction project.
+
+## Stack
+
+Next.js (App Router), React, TypeScript. Plain CSS in `src/app/globals.css`. Fonts via `next/font/google`.
+
+## Run it
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # production build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Set `GA_ID` in the environment to enable Google Analytics. It is off when unset.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Where things live
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/content/` is the copy and data: `site.ts` (home), `software.ts`, `construction.ts`.
+- `src/app/` are the pages. `src/lib/seo.ts` builds per-page title, canonical and share-card metadata.
+- `public/` holds images. `public/og.png` is the 1200x630 share card, `public/logo.svg` the mark, `public/llms.txt` the summary for AI crawlers.
 
-## Learn More
+## Keep in step when the studio changes
 
-To learn more about Next.js, take a look at the following resources:
+When a page, project or discipline is added or renamed, update `public/llms.txt`, `src/app/sitemap.ts` and the description in `src/app/layout.tsx`. These are not generated.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To add photos to a construction project, put the file in `public/construction/` and set its `src` in `src/content/construction.ts`.
