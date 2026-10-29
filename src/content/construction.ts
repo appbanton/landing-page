@@ -74,9 +74,9 @@ export const PROJECTS: Project[] = [
       {
         title: "Finished",
         photos: [
-          { alt: "Full exterior of the finished villa", span: 12 },
-          { alt: "Carport and driveway", span: 6 },
-          { alt: "Stairs, finished", span: 6 },
+          { src: `${P}skylark-villa-09.jpg`, alt: "Living room and kitchen of the finished villa apartment", span: 4, tall: true },
+          { src: `${P}skylark-villa-10.jpg`, alt: "Kitchen", span: 4, tall: true },
+          { src: `${P}skylark-villa-11.jpg`, alt: "Solid 8 ft apamate entrance door", span: 4, tall: true },
         ],
       },
     ],
