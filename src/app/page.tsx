@@ -116,12 +116,11 @@ export default function Home() {
             </div>
 
             <div className="tile">
-              <a
-                className="tile-photo"
-                href={SKYLARK.siteUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              {/* Plain <a>, not <Link>: Next's router can double the hash
+                  (#skylark-villa#skylark-villa) on repeat visits, which
+                  breaks the scroll and the :target highlight. */}
+              {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+              <a className="tile-photo" href="/software#skylark-villa">
                 <Photo
                   src={SKYLARK.sitePhoto}
                   alt="The Skylark Villa website on a screen"
@@ -130,15 +129,11 @@ export default function Home() {
                 />
               </a>
               <div className="slate">
-                <a
-                  className="slate-link"
-                  href={SKYLARK.siteUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+                <a className="slate-link" href="/software#skylark-villa">
                   <div className="slate-top">
                     <span>Software</span>
-                    <span className="arrow" aria-hidden="true">↗</span>
+                    <span className="arrow" aria-hidden="true">→</span>
                   </div>
                   <h3>The website</h3>
                 </a>

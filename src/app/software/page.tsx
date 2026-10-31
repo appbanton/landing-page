@@ -14,7 +14,7 @@ export const metadata: Metadata = pageMeta({
 
 function Entry({ p, lead = false }: { p: Project; lead?: boolean }) {
   return (
-    <article className={`sw-proj${lead ? " sw-lead" : ""}`}>
+    <article id={p.id} className={`sw-proj${lead ? " sw-lead" : ""}`}>
       <a
         className="sw-shot"
         href={p.url}
