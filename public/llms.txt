@@ -1,6 +1,6 @@
 # App Banton Studios
 
-> A design and build studio in Port of Spain, Trinidad. Three disciplines under one roof: marketing (film, photography and social posts), software (websites, web apps and mobile apps) and construction (residential design, build and renovation).
+> A design and build studio in Port of Spain, Trinidad. Got a story to tell, a product to launch or a home to build? We make all three: marketing (film, photography and social posts), software (websites, web apps and mobile apps) and construction (residential design, build and renovation).
 
 The same studio made the house, the film and the website for Skylark Villa, a private villa on Trinidad's northern coast.
 
@@ -27,6 +27,11 @@ Residential design, build and renovation, in Trinidad. Each project has a photo 
 - **Blanchisseuse** (https://appbanton.com/construction/skylark-villa): new build, 16 months. The private villa on the north coast that is also Skylark Villa. Footings and retaining walls on a sloping site, a framed structure over two levels, four flights of stairs, a carport and driveway.
 - **Cascade** (https://appbanton.com/construction/cascade): renovation, 5 months. French drain, stairs up a 15 ft slope, security door, masonry and plumbing, and a bridge to a renovated bedroom.
 - **San Juan** (https://appbanton.com/construction/san-juan): renovation, 7 weeks. Bathroom, kitchen and living room renovated, including new ceilings, tile, a glass shower enclosure and a solid wood sliding door.
+
+## Where we work
+
+- Marketing and software: we work with clients worldwide.
+- Construction: projects to date are in Trinidad.
 
 ## Contact
 

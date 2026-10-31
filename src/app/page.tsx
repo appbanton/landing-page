@@ -20,7 +20,10 @@ export default function Home() {
           <h1>
             A design and build <em>studio.</em>
           </h1>
-          <p className="sub">What do you need made? Pick where to start.</p>
+          <p className="sub">
+            Got a story to tell, a product to launch or a home to build? We make
+            all three.
+          </p>
 
           <nav className="doors" aria-label="Choose a discipline">
             {DISCIPLINES.map((d) => (
