@@ -145,6 +145,7 @@ h1 em { font-style: normal; color: var(--brand); }
   color: var(--ink2);
   max-width: 48ch;
 }
+.hero .sub { max-width: 60ch; }
 
 /* Doors */
 .doors {

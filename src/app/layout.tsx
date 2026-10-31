@@ -52,6 +52,41 @@ const structuredData = {
     "residential design and construction",
     "home renovation",
   ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "What we make",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Marketing",
+          description: "Film, photography and social posts.",
+          url: "https://appbanton.com/marketing",
+          areaServed: "Worldwide",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Software",
+          description: "Websites, web apps and mobile apps.",
+          url: "https://appbanton.com/software",
+          areaServed: "Worldwide",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Construction",
+          description: "Residential design, build and renovation.",
+          url: "https://appbanton.com/construction",
+        },
+      },
+    ],
+  },
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "sales",
