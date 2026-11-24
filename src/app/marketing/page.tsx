@@ -4,7 +4,6 @@ import { pageMeta } from "@/lib/seo";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import VideoTile from "@/components/VideoTile";
-import TeaserMark from "@/components/TeaserMark";
 import { LONGEST_HOUR, SKYLARK } from "@/content/site";
 
 export const metadata: Metadata = pageMeta({
@@ -65,19 +64,17 @@ export default function MarketingPage() {
               </figure>
               <div className="sw-slate">
                 <p className="sw-nm">The Road Never Stops</p>
-                <p className="sw-cat">Film</p>
-                <h2 className="sw-hd">In production</h2>
-                <p className="sw-txt">Release date to be announced.</p>
+                <p className="sw-cat">Film · Spec Ad</p>
+                <h2 className="sw-hd">In post production</h2>
+                <p className="sw-txt">Release date: January 4th 2027</p>
               </div>
             </article>
 
             <article className="sw-proj">
-              <figure className="mk-cap mk-teaser">
-                <TeaserMark />
-              </figure>
+              <figure className="mk-cap mk-teaser" aria-hidden="true" />
               <div className="sw-slate">
-                <p className="sw-nm">Untitled</p>
-                <p className="sw-cat">Teaser</p>
+                <p className="sw-nm">Quietly There</p>
+                <p className="sw-cat">Film · Spec Ad</p>
                 <h2 className="sw-hd">Coming soon</h2>
               </div>
             </article>
