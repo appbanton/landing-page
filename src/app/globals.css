@@ -492,16 +492,7 @@ h2 {
 }
 .mk-cap { position: relative; overflow: hidden; max-width: 100%; aspect-ratio: 16 / 9; background: var(--s2); }
 .mk-teaser {
-  display: grid;
-  place-items: center;
   background: radial-gradient(ellipse 70% 90% at 32% 28%, var(--s2) 0%, var(--s1) 48%, var(--canvas) 100%);
-}
-.mk-logo {
-  display: block;
-  width: clamp(110px, 30%, 190px);
-  height: auto;
-  -webkit-mask-image: linear-gradient(155deg, #000 30%, rgba(0, 0, 0, 0.62) 100%);
-  mask-image: linear-gradient(155deg, #000 30%, rgba(0, 0, 0, 0.62) 100%);
 }
 @media (max-width: 1000px) {
   .mk-grid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
